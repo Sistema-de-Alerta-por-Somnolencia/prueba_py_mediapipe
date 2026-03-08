@@ -7,7 +7,7 @@ from shared import stop_event
 class CameraThread(threading.Thread):
     def __init__(self):
         super().__init__()
-        self.cap = cv2.VideoCapture(0)
+        self.cap = cv2.VideoCapture(1)
 
     def run(self):
         prev_time = time.time()

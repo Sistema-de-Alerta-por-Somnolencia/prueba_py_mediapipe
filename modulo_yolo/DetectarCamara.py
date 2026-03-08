@@ -5,7 +5,7 @@ import cv2
 model = YOLO("best.pt")
 
 # Abrir cámara (0 = webcam principal)
-cap = cv2.VideoCapture(0)
+cap = cv2.VideoCapture(1)
 
 if not cap.isOpened():
     print("No se pudo abrir la cámara")
@@ -17,7 +17,7 @@ while True:
         break
 
     # Ejecutar detección
-    results = model(frame, conf=0.4)
+    results = model(frame, conf=0.15)
 
     # Dibujar resultados
     annotated_frame = results[0].plot()
@@ -25,7 +25,7 @@ while True:
     cv2.imshow("Deteccion YOLO", annotated_frame)
 
     # Presiona Q para salir
-    if cv2.waitKey(1) & 0xFF == ord('q'):
+    if cv2.waitKey(1) & 0xFF == ord("q"):
         break
 
 cap.release()
