@@ -1,0 +1,33 @@
+# Ignorar el entorno virtual
+venv/
+.env/
+
+# Archivos de dependencias compiladas
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Archivos de configuración locales
+*.sqlite3
+*.log
+
+# Archivos de paquetes
+*.egg-info/
+*.egg
+
+# Configuración de IDEs
+.vscode/
+.idea/
+
+# Archivos de pruebas
+.coverage
+htmlcov/
+.pytest_cache/
+
+# Archivos de dependencias instaladas
+*.whl
+
+# Archivos de sistema
+.DS_Store
+Thumbs.db

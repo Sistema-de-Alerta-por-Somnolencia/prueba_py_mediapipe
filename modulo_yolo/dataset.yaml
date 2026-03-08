@@ -1,0 +1,9 @@
+path: dataset
+train: images/train
+val: images/val
+
+names:
+  0: gun
+  1: cigarette
+  2: Seat_Belt
+  3: Without_Seat_Belt

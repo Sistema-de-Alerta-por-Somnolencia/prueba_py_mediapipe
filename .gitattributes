@@ -1,0 +1,23 @@
+# Forzar que todos los archivos de texto usen LF en el repo
+* text=auto eol=lf
+
+# Archivos de código Python
+*.py text eol=lf
+
+# Archivos de configuración
+*.txt text eol=lf
+*.md  text eol=lf
+*.json text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+
+# Archivos de datos que deben mantenerse binarios
+*.jpg binary
+*.jpeg binary
+*.png binary
+*.gif binary
+*.zip binary
+*.tar binary
+*.gz binary
+*.mp4 binary
+*.mp3 binary
