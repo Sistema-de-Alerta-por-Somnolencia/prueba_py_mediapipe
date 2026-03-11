@@ -22,13 +22,14 @@ while True:
         coincidencia = fr.compare_faces(
             [vector_conocido], vector_desconocido, tolerance=0.6
         )
-        if coincidencia:
+        if coincidencia[0]:
             print("Cara conocidad, Acceso concedido")
         else:
             print("Persona desconocida, Sin Acceso")
     else:
         print("sin imagen")
 
+    cv2.imshow("Reconocimiento Facial", frame)
     if cv2.waitKey(1) & 0xFF == ord("q"):
         break
 
